@@ -1,0 +1,15 @@
+{
+  "name": "codequest-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "node backend/server.js",
+    "frontend": "npm run --prefix frontend dev",
+    "build": "npm run --prefix frontend build"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
